@@ -79,14 +79,16 @@ if (len(sys.argv) ==2):
 #Andrea Rozo Méndez
 #201015972
 
-x = [1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0,20.0]
-y = []
-for i in range (len(x)):
-	y.append(frecuencias[i])
+	x = [1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0,18.0,19.0,20.0]
+	y = []
+	for i in range (len(x)):
+		y.append(frecuencias[i])
 
-x1 = np.array(x)
-y1 = np.array(y)
+	x1 = np.array(x)
+	y1 = np.array(y)
 
-z = np.polyfit(np.log(x1),np.log(y1),1)
-print z
+	z = np.polyfit(np.log(x1),np.log(y1),1)
+	print z
 
+else:
+	print "Los parámetros del programa no son correctos"
